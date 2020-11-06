@@ -1,1 +1,1 @@
-# Repo for build and push portainer to dockerhub
+# Repo for building/pulling images to dockerhub
