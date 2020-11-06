@@ -15,8 +15,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag bambix/portainer:$(date +%s)
+      run: docker build . --file Dockerfile --tag bambix/portainer:$(date)
     - name: Login to docker-hub
       run: docker login --username bambix --password  58468895-86db-4cd7-9400-c262f4977c7e
     - name: Push the docker image
-      run: docker push bambix/portainer:$(date +%s)
+      run: docker push bambix/portainer:$(date)
